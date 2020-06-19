@@ -1,0 +1,70 @@
+
+p, a , h1, h2, h3{
+    font-family: 'Homemade Apple', cursive; /* Lägger till Homemade apple fonten i p, a, h1-h3 taggarna */
+    font-size: 12px;
+    
+}
+
+
+
+* {         /* Vildkortsväljaren */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+ 
+
+}
+
+body{
+    background: url(bakgrund2.jpg);
+}
+
+.middle {
+    position: absolute; /* Detta är vad som visas på kortet när den är i "mitten" under rotationen. Hade jag inte haft detta så hade hela hemsidan buggat sönder. */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card { /* Storleken på mainbild */
+    width: 340px;
+    height: 480px;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear; /* Snabbheten på hur fort kortet ska vändas */
+}
+
+.front img {
+    height: 100%;
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+    background: url(back7.jpg); /* bakgrunden på baksidan av kortet */
+    transform: perspective(600px) rotateY(180deg); /* perspective är en väljare som avgör hur mycket 3d element ska vara i 3d */
+}                   /* en längre persperctive, på tillexempel 100px har en mer intens 3d effekt, vilket inte funkade alls för min bild. */
+                    /* rotateY är hur mycket bilden ska roteras, och i detta fallet ska den roteras helt, så alltså 180deg/degrees */ 
+
+.back-content { /* Här väljer jag färg på texten och att texten ska vara i mitten med en width på 100% */
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg); /* bilden ska roteras -180deg för att roteras helt */
+}
+
+.card:hover > .back {
+    transform: perspective(600px) rotateY(0deg); /* rotateY måste vara på 0deg här för att baksidan ska komma fram, annars roteras bara framsidan men det kommer inte upp något där bakom. */
+}
+

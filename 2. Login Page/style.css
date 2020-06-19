@@ -1,0 +1,78 @@
+body {
+    background-image: url(bakgrund6.jpg);
+    padding: 0px;
+    border: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: burlywood
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #333;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: bisque;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+input {
+    display: block;
+    height: 40px;
+    width: 200px;
+    margin-top: 6px;
+    margin-left: 60px;
+}
+
+button {
+    color: burlywood;
+    height: 20px;
+    width: 100px;
+    margin-top: 6px;
+    margin-left: 60px;
+}
+
+button:hover{
+    background-color: bisque;
+}
+
+aside {
+    float: right;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid;
+    background: whitesmoke
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: burlywood;
+    color: #333;
+    text-align: center;
+    
+}
+
+p {
+    background-color: whitesmoke;
+}

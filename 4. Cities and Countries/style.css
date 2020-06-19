@@ -1,0 +1,28 @@
+body {
+  background-color: whitesmoke; 
+}
+
+.nav li { 
+  display: block;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 5px;
+  
+}
+
+#div1, #div2, #div3, .besökt {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+
+}
+
+footer {
+  posistion: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}

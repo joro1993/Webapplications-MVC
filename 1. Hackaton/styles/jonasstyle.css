@@ -1,0 +1,51 @@
+body {
+    background-image: url(images/jonasbakgrund.jpg);
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#content {
+    float: left;
+    width: 600px;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid;
+    background: whitesmoke;
+}
+
+aside {
+    float: right;
+    width: 300px;
+    margin: 100px;
+    border: 2px solid;
+    background: whitesmoke;
+}
+
+section {
+    float: left;
+    margin: 0 1,5%;
+    width: 63%
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+}
